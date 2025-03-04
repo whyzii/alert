@@ -52,7 +52,7 @@ while True:
             price_change_percent = ((new_price - old_price) / old_price) * 100
             
             # If price change exceeds ±10%, send alert
-            if abs(price_change_percent) >= 0.25:
+            if abs(price_change_percent) >= 0:
                 send_telegram_alert(crypto, old_price, new_price, price_change_percent)
 
             # Update stored price
